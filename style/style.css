@@ -1,3 +1,13 @@
+@font-face {
+    font-family: 'queroBolo';
+    src: url('../assets/fonts/Kenyan\ Coffee\ Rg.otf');
+}
+
+@font-face {
+    font-family: 'queroBolo2';
+    src: url('../assets/fonts/Louis\ George\ Cafe.ttf');
+}
+
 body{
     max-width: 100%;
     min-height: 90vh;
@@ -64,10 +74,19 @@ h1#title{
     text-align: center;
     display: none;
     z-index: 2;
+    font-family: 'queroBolo2';
+    color: #9A83BB;
+}
+
+.text img{
+    object-fit: contain;
+    width: 60%;
+    margin-top: 1em;
+    margin-bottom: -1em;
 }
 
 .blocks{
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
@@ -89,6 +108,15 @@ h1#title{
     cursor: pointer;
 }
 
+.blocks .blocksElement img{
+    width: 100%;
+    mix-blend-mode: multiply;
+}
+
 .blocks .blocksElement:hover{
     transform: scale(1.1);
+}
+
+.blocks .blocksElement:hover img{
+    mix-blend-mode: luminosity;
 }
