@@ -1,3 +1,4 @@
+
 @font-face {
     font-family: 'queroBolo';
     src: url('../assets/fonts/Kenyan\ Coffee\ Rg.otf');
@@ -119,4 +120,99 @@ h1#title{
 
 .blocks .blocksElement:hover img{
     mix-blend-mode: luminosity;
+
+body{
+    max-width: 100%;
+    min-height: 90vh;
+    height: 100%;
+    background-image: url('../assets/imgs/download.gif');
+    background-size: cover;
+    background-repeat: repeat-y;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1#title{
+    color: white;
+    background-color: #9c99f266;
+    backdrop-filter: blur(10px);
+    padding: 1em;
+    border-radius: 20px;
+}
+
+.opcoes{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.opcoes button{
+    width: 200px;
+    margin-inline: 0.5em;
+    font-size: 1em;
+    color: white;
+    padding: 0.5em;
+    background-color: #9c99f266;
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+.opcoes button:hover{
+    transform: scale(1.1);
+}
+
+.confetti{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: none;
+    transition: 600ms;
+    z-index: 1;
+}
+
+.confetti img{
+    object-fit: cover;
+    width: 100%;
+    height: 98%;
+}
+
+.text{
+    text-align: center;
+    display: none;
+    z-index: 2;
+}
+
+.blocks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #ceb6f23b;
+    width: 24%;
+}
+
+.blocks .blocksElement{
+    width: 150px;
+    height: 150px;
+    background: #CEB6F2;
+    margin: 0.5em;
+    border: 0.3em solid #9A83BB;
+    border-radius: calc(20px - 1em);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 300ms;
+    cursor: pointer;
+}
+
+.blocks .blocksElement:hover{
+    transform: scale(1.1);
+
 }
