@@ -120,6 +120,7 @@ h1#title{
 
 .blocks .blocksElement:hover img{
     mix-blend-mode: luminosity;
+}
 
 body{
     max-width: 100%;
@@ -214,5 +215,4 @@ h1#title{
 
 .blocks .blocksElement:hover{
     transform: scale(1.1);
-
 }

@@ -38,6 +38,7 @@ let title = document.getElementById('title')
 let confetti = document.getElementsByClassName('confetti')[0];
 let text = document.getElementsByClassName("text")[0];
 let blocks = document.getElementsByClassName('blocks')[0];
+}
 
 function noJumping(){
     nao.style.position = 'absolute'
